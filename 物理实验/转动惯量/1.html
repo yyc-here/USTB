@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>物理实验数据处理</title>
+    <link href="1.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>物理实验数据处理</h1>
+    <p><strong>1.几种物体转动惯量的测量</strong></p>
+
+    <p>物体名称——金属载物盘：</p>
+    <table id="zwt_t">
+        <thead>
+            <tr>
+                <th scope="row">测量次数</th>
+                <th scope="col">周期10T<sub>0</sub>(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="zwt_t1" name="zwt_t1" type="text" data-type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="zwt_t2" name="zwt_t2" type="text" data-type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="zwt_t3" name="zwt_t3" type="text" data-type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">T<sub>0</sub>平均值</th>
+                <td><cite id="t0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>物体名称——塑料圆柱：</p>
+    <p>塑料圆柱质量m<sub>1</sub>=<span class="question-stem-fill-blank"><input id="slyz_m" name="slyz_m" type="text" /></span>
+        kg</p>
+    <table id="slyz_t">
+        <thead>
+            <tr>
+                <th scope="row">测量次数</th>
+                <th scope="col">几何尺寸D<sub>1</sub>(×10<sup>-2</sup>m)</th>
+                <th scope="col">周期10T<sub>1</sub>(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="slyz_d0_1" name="slyz_d0_1" type="text" /></td>
+                <td><input id="slyz_t0_1" name="slyz_t0_1" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="slyz_d0_2" name="slyz_d0_2" type="text" /></td>
+                <td><input id="slyz_t0_2" name="slyz_t0_2" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="slyz_d0_3" name="slyz_d0_3" type="text" /></td>
+                <td><input id="slyz_t0_3" name="slyz_t0_3" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">D<sub>1、</sub>T<sub>1</sub>平均值</th>
+                <td><cite id="slyz_d0_0"></cite></td>
+                <td><cite id="slyz_t0_0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>物体名称——金属圆筒：</p>
+
+    <p>金属圆筒的质量m<sub>2</sub>=<span class="question-stem-fill-blank"><input id="jsyt_m" name="jsyt_m"
+                type="text" /></span> kg</p>
+    <table id="jsyt_t">
+        <thead>
+            <tr>
+                <th scope="row">测量次数</th>
+                <th scope="col">几何尺寸D<sub>外</sub>(×10<sup>-2</sup>m)</th>
+                <th scope="col">几何尺寸D<sub>内</sub>(×10<sup>-2</sup>​m)</th>
+                <th scope="col">周期10T<sub>2</sub>(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="jsyt_d0_1" name="jsyt_d0_1" type="text" /></td>
+                <td><input id="jsyt_d1_1" name="jsyt_d1_1" type="text" /></td>
+                <td><input id="jsyt_t0_1" name="jsyt_t0_1" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="jsyt_d0_2" name="jsyt_d0_2" type="text" /></td>
+                <td><input id="jsyt_d1_2" name="jsyt_d1_2" type="text" /></td>
+                <td><input id="jsyt_t0_2" name="jsyt_t0_2" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="jsyt_d0_3" name="jsyt_d0_3" type="text" /></td>
+                <td><input id="jsyt_d1_3" name="jsyt_d1_3" type="text" /></td>
+                <td><input id="jsyt_t0_3" name="jsyt_t0_3" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">D<sub>外</sub>、D<sub>内</sub>、T<sub>2</sub>平均值</th>
+                <td><cite id="jsyt_d0_0"></cite></td>
+                <td><cite id="jsyt_d1_0"></cite></td>
+                <td><cite id="jsyt_t0_0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>物体名称——实心球：</p>
+
+    <p>实心球的质量m<sub>3</sub>=<span class="question-stem-fill-blank"><input id="sxq_m" name="sxq_m" type="text" /></span>
+        kg</p>
+    <table id="sxq_t">
+        <thead>
+            <tr>
+                <th scope="row">测量次数</th>
+                <th scope="col">几何尺寸D<sub>3</sub>(×10<sup>-2</sup>m)</th>
+                <th scope="col">周期10T<sub>3</sub>(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="sxq_d0_1" name="sxq_d0_1" type="text" /></td>
+                <td><input id="sxq_t0_1" name="sxq_t0_1" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="sxq_d0_2" name="sxq_d0_2" type="text" /></td>
+                <td><input id="sxq_t0_2" name="sxq_t0_2" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="sxq_d0_3" name="sxq_d0_3" type="text" /></td>
+                <td><input id="sxq_t0_3" name="sxq_t0_3" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">D<sub>3</sub><sub>、</sub>T<sub>3</sub>平均值</th>
+                <td><cite id="sxq_d0_0"></cite></td>
+                <td><cite id="sxq_t0_0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>物体名称——金属细杆：</p>
+    <p>金属细杆的质量m<sub>4</sub>=<span class="question-stem-fill-blank"><input id="jsxg_m" name="jsxg_m"
+                type="text" /></span> kg</p>
+    <table id="jsxg_t">
+        <thead>
+            <tr>
+                <th scope="row">测量次数</th>
+                <th scope="col">几何尺寸D<sub>4</sub>(×10<sup>-2</sup>m)</th>
+                <th scope="col">周期10T<sub>4</sub>(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="jsxg_d0_1" name="jsxg_d0_1" type="text" /></td>
+                <td><input id="jsxg_t0_1" name="jsxg_t0_1" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="jsxg_d0_2" name="jsxg_d0_2" type="text" /></td>
+                <td><input id="jsxg_t0_2" name="jsxg_t0_2" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="jsxg_d0_3" name="jsxg_d0_3" type="text" /></td>
+                <td><input id="jsxg_t0_3" name="jsxg_t0_3" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">D<sub>4、</sub>T<sub>4</sub>平均值</th>
+                <td><cite id="jsxg_d0_0"></cite></td>
+                <td><cite id="jsxg_t0_0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>（1）转动惯量理论值</p>
+    <p>塑料圆柱转动惯量的理论值:(4/5) <cite id="slyz_l">0</cite></p>
+    <p>金属圆筒转动惯量的理论值:(4/5) <cite id="jsyt_l">0</cite></p>
+    <p>实心球转动惯量的理论值:(4/6) <cite id="sxq_l">0</cite></p>
+    <p>金属细杆转动惯量的理论值(4/5): <cite id="jsxg_l">0</cite></p>
+    <p>（2）弹簧扭转常数K=(3/5)<span class="question-stem-fill-blank"><cite id="k">0</cite></span> N·m</p>
+    <p>（3）各个物体转动惯量的实验值</p>
+    <p>金属载物盘转动惯量的实验值:(3/5) <cite id="zwt_s">0</cite></p>
+    <p>金属圆筒转动惯量的实验值:(3/5) <cite id="jsyt_s">0</cite></p>
+    <p>金属圆筒转动惯量的百分差（1/2）: <cite id="jsyt_b">0</cite></p>
+    <p>实心球转动惯量的实验值: <cite id="sxq_s">0</cite></p>
+    <p>实心球转动惯量的百分差（1/2）: <cite id="sxq_b">0</cite></p>
+    <p>金属细杆转动惯量的实验值: <cite id="jsxg_s">0</cite></p>
+    <p>金属细杆转动惯量的百分差（1/2）: <cite id="jsxg_b">0</cite></p>
+    <p>2.验证转动惯量平行轴定理</p>
+    <p>m滑=<span class="question-stem-fill-blank"><input id="xhk_m" name="xhk_m" type="text" /></span> g</p>
+    <p>D0滑=<span class="question-stem-fill-blank"><input id="xhk_d0" name="xhk_d0" type="text" /></span> cm</p>
+    <p>D1滑=<span class="question-stem-fill-blank"><input id="xhk_d1" name="xhk_d1" type="text" /></span> cm</p>
+    <p>H0滑=<span class="question-stem-fill-blank"><input id="xhk_h0" name="xhk_h0" type="text" /></span> cm</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="row">X</th>
+                <th scope="col">5.00</th>
+                <th scope="col">10.00</th>
+                <th scope="col">15.00</th>
+                <th scope="col">20.00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><input id="xhk_5_t1" name="xhk_5_t1" type="text" /></td>
+                <td><input id="xhk_10_t1" name="xhk_10_t1" type="text" /></td>
+                <td><input id="xhk_15_t1" name="xhk_15_t1" type="text" /></td>
+                <td><input id="xhk_20_t1" name="xhk_20_t1" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input id="xhk_5_t2" name="xhk_5_t2" type="text" /></td>
+                <td><input id="xhk_10_t2" name="xhk_10_t2" type="text" /></td>
+                <td><input id="xhk_15_t2" name="xhk_15_t2" type="text" /></td>
+                <td><input id="xhk_20_t2" name="xhk_20_t2" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input id="xhk_5_t3" name="xhk_5_t3" type="text" /></td>
+                <td><input id="xhk_10_t3" name="xhk_10_t3" type="text" /></td>
+                <td><input id="xhk_15_t3" name="xhk_15_t3" type="text" /></td>
+                <td><input id="xhk_20_t3" name="xhk_20_t3" type="text" /></td>
+            </tr>
+            <tr>
+                <th scope="row">-</th>
+                <td><cite id="xhk_5_t0"></cite></td>
+                <td><cite id="xhk_10_t0"></cite></td>
+                <td><cite id="xhk_15_t0"></cite></td>
+                <td><cite id="xhk_20_t0"></cite></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>（1）小滑块围绕通过质心的转轴的转动惯量的理论值(3/5)：<cite id="xhk_l"></cite></p>
+    <p>（2）X=5.00cm时，转动惯量</p>
+    <p>理论值(3/4)<cite id="xhk_5_l">0</cite></p>
+    <p>实验值(3/5)<cite id="xhk_5_s">0</cite></p>
+    <p>百分差(1/2)<cite id="xhk_5_b">0</cite></p>
+    <p>（2）X=10.00cm时，转动惯量</p>
+    <p>理论值(3/5)<cite id="xhk_10_l">0</cite></p>
+    <p>实验值<cite id="xhk_10_s">0</cite></p>
+    <p>百分差<cite id="xhk_10_b">0</cite></p>
+    <p>（2）X=15.00cm时，转动惯量</p>
+    <p>理论值<cite id="xhk_15_l">0</cite></p>
+    <p>实验值<cite id="xhk_15_s">0</cite></p>
+    <p>百分差<cite id="xhk_15_b">0</cite></p>
+    <p>（2）X=5.00cm时，转动惯量</p>
+    <p>理论值<cite id="xhk_20_l">0</cite></p>
+    <p>实验值<cite id="xhk_20_s">0</cite></p>
+    <p>百分差<cite id="xhk_20_b">0</cite></p>
+    <button id="btn">计算</button>
+    <p>无名小卒出品</p>
+    <script src="1.js"></script>
+</body>
+
+</html>
